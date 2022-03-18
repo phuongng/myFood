@@ -16,8 +16,7 @@ const MealItem = (props) => {
         name: props.name,
         amount: amount,
         price: props.price,
-      }
-    );
+      });
   };
 
   return (
@@ -29,7 +28,7 @@ const MealItem = (props) => {
       </div>
 
       <div>
-        <MealItemForm id={props.id} onAddToCart={addToCartHandler} />
+        <MealItemForm onAddToCart={addToCartHandler} />
       </div>
     </li>
   );
